@@ -28,14 +28,13 @@ export default function Home() {
               </span>
             </div>
             <p className="text-gray-300 leading-relaxed text-sm md:text-base">
-              Um evento feito por e para pessoas desenvolvedoras apaixonadas por
-              criar soluções inovadoras e compartilhar conhecimento. Vamos
-              mergulhar nas tendências mais recentes em desenvolvimento de
-              software, arquitetura de sistemas e tecnologias emergentes, com
-              palestras, workshops e hackathons.
+              An event made by and for developers passionate about creating
+              innovative solutions and sharing knowledge. Let's dive into the
+              latest trends in software development, system architecture, and
+              emerging technologies with talks, workshops, and hackathons.
               <br />
               <br />
-              Dias 15 a 17 de março | Das 18h às 21h | Online & Gratuito
+              March 25-27, 2025
             </p>
           </div>
 
