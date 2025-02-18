@@ -4,9 +4,9 @@ import { IconButton } from "@/components/icon-button";
 import { InputField, InputIcon, InputRoot } from "@/components/input";
 import { Copy, Link } from "lucide-react";
 
-interface InviteLinkInputProps {
+type InviteLinkInputProps = {
   inviteLink: string;
-}
+};
 
 export function InviteLinkInput({ inviteLink }: InviteLinkInputProps) {
   function copyInviteLink() {

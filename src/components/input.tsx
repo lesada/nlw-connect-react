@@ -1,16 +1,23 @@
 import { ComponentProps } from "react";
 
 type InputProps = ComponentProps<"div"> & {
-  error?: boolean;
+  error?: string;
 };
 
-export function InputRoot({ error = false, ...rest }: InputProps) {
+export function InputRoot({ error, ...rest }: InputProps) {
   return (
-    <div
-      data-error={error}
-      className="group bg-gray-800 h-12 border border-gray-600 rounded-xl px-4 flex items-center gap-2 focus-within:border-gray-100 data-[error=true]:border-danger"
-      {...rest}
-    />
+    <div>
+      <div
+        data-error={error}
+        className="group bg-gray-800 h-12 border border-gray-600 rounded-xl px-4 flex items-center gap-2 focus-within:border-gray-100 data-[error=true]:border-danger"
+        {...rest}
+      />
+      {error && (
+        <span className="text-danger text-xs font-semibold" role="alert">
+          {error}
+        </span>
+      )}
+    </div>
   );
 }
 
