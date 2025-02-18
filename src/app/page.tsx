@@ -17,7 +17,7 @@ export default function Home() {
         <InputIcon>
           <Mail />
         </InputIcon>
-        <InputField />
+        <InputField placeholder="aaa" />
       </InputRoot>
     </main>
   );
