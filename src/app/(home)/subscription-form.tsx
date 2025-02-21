@@ -2,12 +2,17 @@
 
 import { Button } from "@/components/button";
 import { InputField, InputIcon, InputRoot } from "@/components/input";
+import { postSubscriptions } from "@/http/api";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowRight, Mail, User } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import { subscriptionFormSchema, TSubscriptionForm } from "./schema";
 
 export function SubscriptionForm() {
+  const { push } = useRouter();
+
   const {
     register,
     handleSubmit,
@@ -16,8 +21,13 @@ export function SubscriptionForm() {
     resolver: zodResolver(subscriptionFormSchema),
   });
 
-  function onSubscribe(data: any) {
-    console.log(data);
+  async function onSubscribe(data: TSubscriptionForm) {
+    try {
+      const { subscriberId } = await postSubscriptions(data);
+      push(`/invite/${subscriberId}`);
+    } catch (e) {
+      toast.error("An error occurred. Please try again later.");
+    }
   }
 
   return (

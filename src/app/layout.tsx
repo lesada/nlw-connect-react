@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Oxanium } from "next/font/google";
+import { ToastContainer } from "react-toastify";
 import "./global.css";
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({
         <main className="max-w-[1240px] mx-auto px-5 py-8 md:py-0">
           {children}
         </main>
+        <ToastContainer />
       </body>
     </html>
   );

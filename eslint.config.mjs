@@ -9,12 +9,6 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
-  ...compat.extends(
-    "next/core-web-vitals",
-    "next/typescript",
-    "lesada" // Adiciona o seu pacote aqui
-  ),
-];
+const eslintConfig = [...compat.extends("lesada")];
 
 export default eslintConfig;
