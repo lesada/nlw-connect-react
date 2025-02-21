@@ -22,7 +22,7 @@ export default async function InvitePage({ params }: InvitePageProps) {
         <Image src={logo} alt="devstage" width={108.5} height={30} />
         <InviteText />
         <InviteLinkInput inviteLink={inviteLink} />
-        <Stats />
+        <Stats subscriberId={subscriberId} />
       </div>
       <Ranking />
     </div>
