@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+### A modern React application using Next.js, TailwindCSS, and powerful form handling
 
-First, run the development server:
+## 🧪 Technologies
+
+### Front-End
+- [TypeScript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/)
+- [React 19](https://react.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Lucide React Icons](https://lucide.dev/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Zod](https://zod.dev/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/introduction)
+
+### Tools
+
+- [ESLint](https://eslint.org/) (with custom config)
+- [Orval](https://orval.dev/) (API client generation)
+- [Turbopack](https://turbo.build/pack) (Next.js dev server)
+- [PostCSS](https://postcss.org/)
+
+## 🚀 Getting started
+
+### Requisites
+
+- [Node.js](https://nodejs.org/en)
+- [Git](https://git-scm.com/)
+- [pnpm](https://pnpm.io/)
+
+### Clone the application
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/lesada/nlw-connect-react.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Install all dependencies:
 
-## Learn More
+```bash
+pnpm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+- Run the application in development mode:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- To create a production build:
 
-## Deploy on Vercel
+```bash
+pnpm build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Then start the production server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm start
+```
+
+The app will be running at `http://localhost:3000`.
+
+---
+
+Made with 💜
